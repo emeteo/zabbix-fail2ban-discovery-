@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>6.0</version>
-    <date>2022-12-10T08:11:32Z</date>
+    <date>2022-12-10T08:58:50Z</date>
     <groups>
         <group>
             <uuid>7df96b18c230490a9a0a9e2307226338</uuid>
@@ -67,7 +67,7 @@
                             <trigger_prototypes>
                                 <trigger_prototype>
                                     <uuid>cac6d8fb6d064697acf210b8cc113f6e</uuid>
-                                    <expression>last(/Template Fail2ban/fail2ban.status[{#JAIL}])&gt;{$F2B_THRESHOLD}</expression>
+                                    <expression>last(/Template Fail2ban/fail2ban.status[{#JAIL}])&gt;{$F2B_THRESHOLD:&quot;{#JAIL}&quot;}</expression>
                                     <name>Fail2ban Flooding</name>
                                     <priority>AVERAGE</priority>
                                     <dependencies>
